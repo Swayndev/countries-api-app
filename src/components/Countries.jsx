@@ -47,7 +47,7 @@ function Countries({change, setChangedLink}) {
     },[change]);
 
     return (
-        <>
+        <div>
             {region === undefined ?
             <><SearchBar loadSearchedCountries={loadSearchedCountries} searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
             {" "}<button onClick={() => loadAllCountries()}>All</button></> :
@@ -59,7 +59,7 @@ function Countries({change, setChangedLink}) {
                 
             ))}
             </div>
-        </>
+        </div>
     );
 }
 

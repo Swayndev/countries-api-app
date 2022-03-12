@@ -1,6 +1,8 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 
 function Country({country, setChangedLink}) {
+    
+    
     const {name, population, region, capital, flags, cca2} = country;
 
     return (
